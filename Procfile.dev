@@ -1,0 +1,2 @@
+web: bundle exec rails server -p 4000 -b localhost --environment ${RAILS_ENV:="development"}
+react: cd frontend && expo start
