@@ -1,0 +1,1 @@
+# Backend dla aplikacji QRApp
