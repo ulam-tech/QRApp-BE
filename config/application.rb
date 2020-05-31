@@ -29,11 +29,25 @@ module QRAppBe
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
-        resource('*',
-                 headers: :any,
-                 expose: %w[Authorization Content-Type Authorization Accept Client-Security-Token Accept-Encoding iat exp jti XMLHttpRequest],
-                 methods: [:get, :patch, :put, :delete, :post, :options, :show])
+        resource(
+            '*',
+            headers: :any,
+            expose: [
+                'Authorization',
+                'Content-Type',
+                'Authorization',
+                'Accept',
+                'Client-Security-Token',
+                'Accept-Encoding',
+                'iat',
+                'exp',
+                'jti',
+                'XMLHttpRequest'
+            ],
+            methods: [:get, :patch, :put, :delete, :post, :options, :show]
+        )
       end
     end
+
   end
 end
