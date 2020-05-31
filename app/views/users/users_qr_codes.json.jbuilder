@@ -1,0 +1,1 @@
+json.qr_codes @qr_codes
