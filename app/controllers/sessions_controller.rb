@@ -1,3 +1,4 @@
+# Nadpisany kontroler dla Sessions
 class SessionsController < Devise::SessionsController
   respond_to :json
 
